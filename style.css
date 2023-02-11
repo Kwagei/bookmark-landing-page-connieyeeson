@@ -7,9 +7,8 @@
 
 body {
 
- background-color: rgb(238, 222, 222);
- width: 100vw;
- height: 100vh;
+ /* background-color: rgb(238, 222, 222); */
+ width: 90vw;
  display: flex;
  flex-direction: column;
  /* justify-content: space-evenly; */
@@ -19,13 +18,16 @@ body {
  
  .container {
      /* background-color: aqua; */
-     width: 95vw;
+     width: 90vw;
      height: 13vh;
      display: flex;
      flex-direction: row;
      justify-content: space-evenly;
      align-items: center;
      font-size: 20px;
+     margin-left: 40px;
+
+
 }
  
 button {
@@ -44,12 +46,7 @@ button {
 
 }
 
-/* .contain {
 
-    background-color: coral;
-    width: vw;
-    height: 13vh;
-} */
 
 .section1 {
 
@@ -62,6 +59,7 @@ justify-content: space-between;
 align-items:center;
 font-size: 20px;
 margin-left: 30px;
+
 
 }
 
@@ -77,7 +75,8 @@ margin-left: 30px;
     justify-content: center;
     padding-top: 40px;
     padding-left: 10px;
-    font-size: 27px;
+    font-size: 15px;
+    margin-top: 50px;
 
 }
 .text {
@@ -98,17 +97,18 @@ margin-left: 30px;
   /* background-color: aqua; */
     margin-left:40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 2.7rem;
 
 }
 
 .phrase {
 
-    /* background: blanchedalmond;  */
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 23px;
     color: gray;
     margin-left: 40px;
+    /* text-align:left; */
 } 
 
 .butn {
@@ -118,7 +118,7 @@ margin-left: 30px;
     height: 50px;
     border-radius: 10px;
     margin-right: 89px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(39, 8, 8, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-bottom: 1px solid lightgray;
     cursor: pointer;
     font-weight: bold;
@@ -127,8 +127,13 @@ margin-left: 30px;
     right: 80;
     animation-duration: 6s;
 
+ }
 
-}
+ .butn:hover {
+    background-color: #d7e9d7; 
+    border: solid black;
+    color: black;
+  }
 
 
 @keyframes slide {
@@ -143,6 +148,12 @@ margin-left: 30px;
   background-color: rgb(235, 239, 239);
   color: black;
 }
+  
+.right_butn:hover {
+    background-color: #d7e9d7; ; 
+    border: solid black;
+    color: black;
+  }
 
 .right_content {
 
@@ -153,4 +164,84 @@ margin-left: 30px;
     justify-content: space-evenly;
     padding-left: 500px;
   
+}
+
+.center_layout {
+
+/* background-color: blue; */
+width: 90vw;
+height: 50vh;
+margin-left: 40px;
+display: flex;
+flex-direction:column ;
+align-items: center;
+justify-content: space-evenly;
+font-size: 40px;
+font-family: 'Times New Roman', Times, serif;
+margin-top: 55px;
+
+}
+
+.base {
+ /* background-color: aqua; */
+ width: 40vw;
+ display: flex;
+flex-direction:row;
+align-items: center;
+justify-content: space-evenly;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+cursor: pointer;
+
+
+
+}
+
+
+.purpose {
+
+    /* background-color: aqua; */
+    width: 45vw;
+    text-align:center;
+    font-size: 20px;
+    color: grey;
+    /* text-align: left; */
+    
+
+}
+
+hr { 
+    
+    
+    width: 500px;
+    /* color: rgb(35, 3, 3); */
+    margin-bottom: 35px;
+    
+}
+
+.lgn:hover {
+    background-color: #d7e9d7; 
+    border: solid black;
+    color: black;
+  }
+
+.section2 {
+
+ /* background-color:rgb(61, 38, 4); */
+ width: 95vw;
+ height: 80vh;
+ display: flex;
+ margin-left: 50px;
+ align-items: center;
+ justify-content: space-evenly;
+
+}
+
+#button {
+
+    margin-right: 400px;
+    width: 90px;
+    animation: none;
+    font-size: 15px;
+    
 }
