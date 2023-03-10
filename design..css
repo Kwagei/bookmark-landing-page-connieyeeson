@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    /* height: 70vh none; */
+    /* overflow: hidden; */
+
+}
+
+header {
+
+    background-color: #fff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+}
+nav a {
+ 
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform:uppercase;
+    font-weight: 700;
+    color: #000;
+
+}
+nav ion-icon {
+    display: none;
+}
+nav a:hover 
+{
+    color: rgb(231, 26, 26);
+}
+
+nav .btn {
+
+    background-color: rgb(231, 26, 26);
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    font-weight:900;
+    font-size: 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    box-shadow: rgba(39, 8, 8, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    
+}
+.btn:hover {
+     background-color: rgb(93, 93, 203);
+     color: #000;
+     
+ }
+
+.sec1 {
+
+    /* background-color: #fff; */
+    margin: 10px  2rem;
+    height: 100%;
+    display: flex;
+    
+}
+main {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.sec1 div {
+
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 50px;
+
+}
+
+.inform {
+
+   
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.inform p {
+    margin-bottom: 4rem;
+   
+}
+
+
+.inform a {
+
+    background-color:blue;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: rgba(39, 8, 8, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    
+}
+
+.image img {
+
+    border: 10px solid;
+    border-radius: 40px;
+
+}
+
+
+.inform h1 {
+
+    margin-bottom: 20px;
+    font-size: 3rem;
+
+}
+/* Section 2 */
+.sec2 {
+    width: 98%;
+    /* background-color: #fff; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.sec2 h2 {
+  
+    font-size: 3rem;
+
+
+}
+ 
+
+.sec2 p {
+
+    font-size: 30px;
+    width: 60%;
+    padding: 40px;
+}
+
+.content{
+
+    /* background-color: aqua; */
+    width: 98%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+
+    margin: 2px;
+}
+    
+.content .btn {
+
+    background-color: rgb(212, 195, 174);
+    margin: 1px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+ .btn:hover {
+
+background-color:blue;
+color: #eee;
+
+}
+
+.sec3 {
+    /* background-color: aqua; */
+    width: 98%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+
+}
+
+.sec3 div {
+
+ background-color: darkkhaki;
+ margin: 3px;
+ width: 45%;
+
+}
+
+.sec3 div img {
+
+    border: 10px solid;
+    border-radius: 25px;
+
+
+}
+
+/* Responsiveness */
+
+@media (max-width: 480) {
+  
+   
+}
+
+
+@media (max-width: 768px)
+{
+    header {
+        height: 5rem;
+    }
+    nav a {
+        display: none;
+    }
+    nav ion-icon {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+        color: chocolate;
+    }
+    .main {
+        width: 100vw;
+    }
+    .sec1 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4rem;
+    }
+
+    .sec1 div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .inform p {
+        width: 100%;
+    }
+
+    .inform a {
+
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction:row;
+    }
+
+    .inform img {
+     margin-top: 0 15px;
+     width: 50%;
+    }
+
+  .sec2 {
+
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+
+.sec2 h2 {
+ 
+ width: 50%;
+  
+
+}
+
+.sec2 p {
+    width:70%;
+    display: flex;
+    font-size: 25px;
+}
+
+.content .btn {
+    width: 100%;
+    height: 10vh;
+    margin-left: 0 30px;
+}
+
+.sec3 {
+
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4rem;  
+
+}
+
+
+
+}
+
