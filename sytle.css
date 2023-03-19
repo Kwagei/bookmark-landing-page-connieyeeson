@@ -9,8 +9,8 @@ body {
     background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
-    /* height: 70vh none; */
-    /* overflow: hidden; */
+    overflow-x: hidden;
+   
 
 }
 
@@ -69,14 +69,14 @@ nav .btn {
     
 }
 main {
-    overflow-y: scroll;
     height: 100%;
+    width: 100%;
 }
 
 .sec1 div {
 
     width: 50%;
-    height: 100%;
+    height: 50vh;
     /* background-color: aqua; */
     margin: 10px;
     display: flex;
@@ -114,6 +114,9 @@ main {
     box-shadow: rgba(39, 8, 8, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+
+
+
 @keyframes slide {
     from {left: -75%;}
     to {left: 1%;}
@@ -124,7 +127,8 @@ main {
 
     border: 10px solid;
     border-radius: 40px;
-
+    width:85%;
+    margin-bottom: 20px;
 }
 
 
@@ -261,134 +265,245 @@ color: #eee;
 
     .sec5{
 
-        background-color: aqua;
-        width: 100%;
-        height:80vh;
+        /* background-color: aqua; */
+        width: 95%;
+        height:90vh;
         display: flex;
         justify-content:space-evenly;
         margin: 10px;
+        margin-left: 30px;
     }
 
-     
+    .sec5 div {
+        background-color: rgb(224, 215, 215);
+        padding: 55px;
+        height: 70vh;
+        margin: 10px;
+        border-radius: 30px;  
+        box-shadow: rgba(39, 8, 8, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+    } 
+
+    .sec5 img {
+    
+    width: 6rem;
+    margin-left: 30px;
+
+    }
+
+    .sec5 a {
+
+        background-color: blue;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 15px;
+        position:relative;
+        animation-name:slide;
+        animation-duration:8s;
+        right: 80;
+    }
+
+    .sec5 a:hover {
+        color:black;
+    }
+
+   .sec5 .frfx {
+ 
+       margin-top:4rem;
+    }
+
+.sec6 {
+
+    background-color:rgb(224, 215, 215);
+    height:30vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec6 h1 {
+
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+
+.sec6 p {
+font-size: 1.5rem;
+text-align:center;
+padding: 20px;
+margin-bottom: 30px;
+ 
+}
+
+.sec7 {
+    /* background-color: aqua; */
+    height: 50vh;
+    margin: 5px;
+    display: flex;
+    flex-direction:column;   
+    justify-content: space-around;
+}
+
+.sec7 div {
+    width: 30%;
+    height: 20wh;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: rgb(71, 68, 68) solid;
+}
+
+.sec7 a {
+    background-color: blue;
+    padding: 1rem;
+    margin-left: 46%;
+    margin-right: auto;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.sec8 {
+
+background-color:#5368df;
+height: 75vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.address{
+
+width: 50%;
+height: 50%;
+/* padding:6rem; */
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+align-items: center;
+margin-top: 28px;
+}
+
+.address p {
+
+    font-size:x-large;
+    color: #eee;
+
+
+} 
+
+.address span {
+    width: 70%;
+    font-size: 20px;
+
+}
+
+.address span input {
+    width: 60%;
+    margin-right: 20px;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.address span a {
+
+    background-color:#fa5757;
+    padding: 13px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #eee;
+    border: #000 solid;
+
+}
+ 
+.address span a:hover {
+background-color: darksalmon;
+color: #000;
+border:black solid;
+
+}
+
+.basing {
+    background-color:#252b46 ;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 2rem;
+    width: 100%;
+
+
+}
+
+.basing img {
+    background-color: #fff;
+}
+
+
+.basing div {
+
+    /* background-color: aqua; */
+    width: 60%;
+    display: flex;
+   justify-content: space-between;
+   align-items:center;
+
+}
+.basing span {
+    background-color:white;
+    width: 10%;
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.basing a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.sec9 {
+
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Responsiveness */
 
-@media (max-width: 480) {
-  
-   
-}
+
+/* Mobile styles */
+
+@media only screen and (min-width:401px)
+{body{
+
+ /* background-color: burlywood; */
+
+}}
 
 
-@media (max-width: 768px)
-{
-    header {
-        height: 5rem;
-    }
-    nav a {
-        display: none;
-    }
-    nav ion-icon {
-        display: block;
-        font-size: 40px;
-        cursor: pointer;
-        color: chocolate;
-    }
-    .main {
-        width: 100%;
-    }
-    .sec1 {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 4rem;
-    }
+/* Tablet styles */
 
-    .sec1 div {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+@media only screen and (min-width:401px) and (max-width:906px)
+{body {
 
-    .inform p {
-        width: 100%;
-    }
+background-color: chartreuse;
 
-    .inform a {
 
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction:row;
-    }
+}} 
 
-    .inform img {
-     margin-top: 0 15px;
-     width: 100%;
-    }
-
-  .sec2 {
-
-     width: 100%;
-    display: flex;
-    flex-direction:column;
-     justify-content: center; 
-
-  
-
-  }
-
-.sec2 h2 {
- 
- width: 50%;
- font-size: 4rem;
-
-}
-
-.sec2 p {
-    width:90%;
-    display: flex;
-    font-size: 1.5rem;
-}
-
-.content .btn {
-    width: 50%;
-    height: 10vh;
-    margin-left: 0 30px;
-    font-size: 1.3rem;
-
-}
-
-.sec3 {
-    
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-     /* margin: 4rem; */
-}
-
-.sec3 div img {
-    width:100%;
-    
-}
-
-.sec3 .lpage {
-    width: 100%;
-    font-size: 1.3rem;
-    margin-left: 1rem;
-    text-align: center;
-}
-
-.sec3 a {
-
-    width: 30%;
-    display: list-item;
-}
-
-.sec4 {
-
-    width: 100%;
-   margin-left: 1rem;
-   
-}
-
-}
-
+@media only screen and (min-width:)
